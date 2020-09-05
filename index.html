@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>arTIfiCE | Jailbreak for TI CE calculators</title>
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Oxygen:700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="scrollreveal.min.js"></script>
+</head>
+<body class="is-boxed has-animations">
+
+<div class="animated-scene">
+    <div class="animated-scene__frame">
+        <img class="animated-scene__frame__img" src="images/bg.jpg" alt="bg">
+    </div>
+</div>
+
+<div class="body-wrap boxed-container">
+
+    <main>
+        <section class="hero text-center text-light" style="padding-top: 15px;">
+            <div class="hero-bg"></div>
+            <div class="hero-particles-container">
+                <canvas id="hero-particles"></canvas>
+            </div>
+            <div class="container-sm">
+                <div class="hero-inner">
+                    <div class="hero-copy">
+                        <h1 class="hero-title mt-0"><img src="images/artifice.gif" alt="arTIfiCE" style="margin: auto"/></h1>
+                        <p class="hero-paragraph" id="intro"><b>arTIfiCE</b> is a <i>jailbreak</i> for TI CE calculators with OS 5.5 / 5.6.<br>
+                            It brings back <abbr title="Assembly">ASM</abbr> programs and games!</p>
+                        <div class="hero-cta">
+                            <button id="getStartedBtn" class="button button-primary button-wide-mobile" style="margin: 3px">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--
+        <section class="features-extended section">
+            <div class="features-extended-inner section-inner" style="margin: -30px -30px -50px;">
+                <div class="features-extended-wrap">
+                    <div class="container">
+                        <div class="feature-extended" id="why" style="justify-content: start !important; padding: 0;">
+                            <div class="feature-extended-body is-revealing" style="width: 100% !important;">
+                                <h3 class="mt-0 mb-16">Why?</h3>
+                                <div id="showWhy">
+                                    Great question! <span style="cursor:pointer; text-decoration: underline; color: #3c467d" onclick="toggleWhy(); return false;"><b>Click here</b></span> to learn why <b>arTIfiCE</b> was made.
+                                </div>
+                                <div id="whyDiv" style="display: none">
+                                    lorem ipsum dolor sit amet...
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+-->
+        <section class="features-extended section">
+            <div class="features-extended-inner section-inner">
+                <div class="features-extended-wrap">
+                    <div class="container">
+
+                        <div class="feature-extended" id="compatibility" style="padding-top: 20px">
+                            <div class="feature-extended-image">
+                                <div id="fadeCalcs" class="mockup-container">
+                                    <img class="device-mockup bottom" src="images/calcs.png" alt="calculators">
+                                    <img id="fadeCalcsTop" class="device-mockup top" src="images/calcs_jb.png" alt="calculators_jailbroken" />
+                                </div>
+                            </div>
+                            <div class="feature-extended-body is-revealing">
+                                <h3 class="mt-0 mb-16">Compatibility</h3>
+                                <div class="m-0">
+                                    <span style="margin-bottom: 8px; display: inline-block"><b>arTIfiCE</b> works on all CE calculators:</span>
+                                    <ul>
+                                    <li><b>TI-83 Premium CE</b><br>OS 5.5.1, 5.5.2</li>
+                                    <li><b>TI-83 Premium CE Edition Python</b><br>OS 5.5.1, 5.5.2</li>
+                                    <li><b>TI-84 Plus CE</b><br>OS 5.6.0</li>
+                                    <li><b>TI-84 Plus CE Python Edition</b><br>OS 5.5.5, 5.6.0</li>
+                                    </ul>
+                                    <i>Note: <b>arTIfiCE</b> is not needed if your calculator has OS 5.4 or earlier!</i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="feature-extended" id="download" style="margin-bottom: -40px;">
+                            <div class="feature-extended-image">
+                                <img class="device-mockup is-revealing" src="images/artifice.gif" alt="download">
+                                <img class="device-mockup is-revealing" src="images/download.png" alt="download" style="width: 100px">
+                            </div>
+                            <div class="feature-extended-body is-revealing">
+                                <h3 class="mt-0 mb-16">1. Download these 2 files</h3>
+                                <div class="m-0">
+                                    <ul>
+                                        <li><a href="arTIfiCE.8xv" download target="_blank">arTIfiCE.8xv</a> (jailbreak with shell)</li>
+                                        <li><a href="https://education.ti.com/software/details/en/55EDE969CFD2484487B4556641BDDC4E/cabri-jr-app" target="_blank" rel="nofollow">Cabri™ Jr. app 5.0</a> (used to launch the jailbreak. Not needed if you already have the app on your calc).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="feature-extended" id="transfer">
+                            <div class="feature-extended-image">
+                                <video class="device-mockup is-revealing" autoplay loop muted style="width:inherit; max-width: 100%; box-shadow: 0 0 20px 8px rgba(130,129,152,.5);">
+                                    <source src="images/transfer.mp4" type="video/mp4">
+                                    <source src="images/transfer.webm" type="video/webm">
+                                </video>
+                            </div>
+                            <div class="feature-extended-body is-revealing">
+                                <h3 class="mt-0 mb-16">2. Send them to your CE</h3>
+                                <div class="m-0">You can use the usual various software to transfer both files to your calculator:
+                                    <ul>
+                                        <li><a href="https://education.ti.com/en/products/computer-software/ti-connect-ce-sw" target="_blank">TI-Connect<small>™</small> CE</a> (Windows, macOS)</li>
+                                        <li><a href="https://chrome.google.com/webstore/detail/ti-connect-ce-app-for-chr/aokihcpccmdjjkebakdanncddpdnkfla?hl=en-US" target="_blank">TI-Connect<small>™</small> CE for ChromeOS</a></li>
+                                        <li><a href="https://raw.githubusercontent.com/debrouxl/tilp_and_gfm/master/tilp/trunk/build/scripts/install_tilp.sh" target="_blank">TILP</a> (Windows, macOS, Linux)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="feature-extended" id="install">
+                            <div class="feature-extended-image text-center">
+                                <video class="device-mockup is-revealing" controls autoplay loop muted style="width:320px; box-shadow: 0 0 20px 8px rgba(130,129,152,.5);">
+                                    <source src="images/launch_cabri.mp4" type="video/mp4">
+                                    <source src="images/launch_cabri.webm" type="video/webm">
+                                </video>
+                            </div>
+                            <div class="feature-extended-body is-revealing">
+                                <h3 class="mt-0 mb-16">3. Open arTIfiCE in Cabri!</h3>
+                                <p class="m-0">Open the <tt>apps</tt> menu on your CE, then launch <b>CabriJr</b>, and open <b>ARTIFICE</b>.
+                                <br>You are now able to launch ASM programs!<br><br>
+                                    From there, you should probably install a shell like
+                                    <a href="https://github.com/mateoconlechuga/cesium/releases/latest" target="_blank">Cesium</a>.
+                                    It makes it easier for you to launch programs later on.
+                                <br><br><small><i>Reopening arTIfiCE may be needed upon resets.</i></small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-extended section">
+            <div class="features-extended-inner section-inner" style="margin: -30px -30px -50px;">
+                <div class="features-extended-wrap">
+                    <div class="container-sm">
+                        <hr>
+                        <br>
+                        <div class="feature-extended" id="faq" style="justify-content: start !important; padding: 0;">
+                            <div class="feature-extended-body is-revealing" style="width: 100% !important;">
+                                <h3 class="mt-0 mb-16">FAQ:</h3>
+                                <div id="faqDiv">
+                                    <button class="accordion">Why?</button>
+                                    <div class="panel">
+                                        <p>Great question! A more detailed answer will make its way onto this page later on, but in summary: it gives back to users their legitimate right to enjoy a feature they paid for that TI unilaterally removed in the latest OS versions (allegedly for security reasons, but the bug that cheaters could in theory use was from TI and had nothing to do with ASM!)</p>
+                                    </div>
+
+                                    <button class="accordion">How do I uninstall arTIfiCE?</button>
+                                    <div class="panel">
+                                        <p>Delete the arTIfiCE appvar from the Memory menu (<tt>2nd</tt>+<tt>+</tt>). Depending on what you need to do, you may also want to delete any installed shell and trigger a RAM Reset as well (be sure to archive and/or backup your files first)</p>
+                                    </div>
+
+                                    <button class="accordion">Will arTIfiCE void the warranty?</button>
+                                    <div class="panel">
+                                        <p>Most probably not, considering arTIfiCE only executes a small piece of assembly code (which was previously possible in earlier OSes), and doesn't install anything persistent. Simply fully reset your calc and there will be no trace of it.</p>
+                                    </div>
+
+                                    <button class="accordion">How does arTIfiCE work?</button>
+                                    <div class="panel">
+                                        <p>arTIfiCE uses software bugs in the calculator's code to be able to execute assembly. A light "shell" is run allowing you to choose which program to launch. The source code may become available later on GitHub.</p>
+                                    </div>
+
+                                    <button class="accordion">Will the bugs allowing arTIfiCE to exist ever be fixed?</button>
+                                    <div class="panel">
+                                        <p>Most likely, but many other bugs have been found that future versions of arTIfiCE may use :)</p>
+                                    </div>
+
+                                    <button class="accordion">Can I cheat with arTIfiCE?</button>
+                                    <div class="panel">
+                                        <p>No - arTIfiCE only restores functionality TI calculators had for dozens of years and removed in the latest OS. arTIfiCE is in no way a cheating tool, and cheating is not condoned here in any way.</p>
+                                    </div>
+
+                                    <button class="accordion">Is arTIfiCE still present in Press-To-Test mode?</button>
+                                    <div class="panel">
+                                        <p>No - arTIfiCE resides in an "appvar" file (Application Variable, an 8xp file) and it will be deleted by the OS when going into Press-To-Test mode, just like most other appvars. You'll have to re-transfer+install it after your exam.</p>
+                                    </div>
+
+                                    <button class="accordion">Can I downgrade my OS with arTIfiCE?</button>
+                                    <div class="panel">
+                                        <p>No, or at least not directly: arTIfiCE only makes it possible for you to launch ASM programs, that's it. So you'd have to find a downgrade program for that (search for it on the usual websites).</p>
+                                    </div>
+
+                                    <button class="accordion">Is there any faster way to launch my programs?</button>
+                                    <div class="panel">
+                                        <p>Sure, from the arTIfiCE shell, you can install another shell, for instance <a href="https://github.com/mateoconlechuga/cesium/releases/latest" target="_blank">Cesium</a>, which can be opened more quickly (thus you get to launch your programs more easily).</p>
+                                    </div>
+
+                                    <button class="accordion">Fun fact?</button>
+                                    <div class="panel">
+                                        <p>Alright... The underlying exploit has a codename. In fact, all the underlying exploits found so far have fun codenames. They'll be released in due time :D</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-particles-container">
+            <canvas id="footer-particles"></canvas>
+        </div>
+        <div class="site-footer-top">
+            <section class="cta section text-light">
+                <div class="container-sm">
+                    <hr>
+                    <div class="cta-inner section-inner">
+                        <div class="cta-header text-center">
+                            <h4 class="section-paragraph">The arTIfiCE jailbreak is fighting for you and the<br><i>freedom of peaceful assembly</i> ;-)</h4>
+                            <br>
+                            <small class="text-center">If you want to help, thank you! But don't donate to me, rather donate to the <a href="https://github.com/CE-Programming/toolchain" target="_blank">CE-Programming contributors</a> on GitHub, they make all native development on the CE possible and awesome!</small>
+                            <br><br>
+                            <small class="text-center">
+                                Legal notes: this website is not affiliated with TI (duh) and everything was done independently.<br>
+                                Use <b>arTIfiCE</b> at your own risk (but don't worry, no tested calcs ran into any issues)<br>
+                                <em style="display: inline-block; margin-top: 8px">Background made with images from <a href="https://tiplanet.org/forum/viewtopic.php?f=41&t=23858" target="_blank">this article</a>. Credits to their respective authors.</em>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </footer>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

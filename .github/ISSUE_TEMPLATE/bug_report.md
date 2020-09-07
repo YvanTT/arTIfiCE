@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Found a bug? Woops, please describe it so it can be fixed! Replace the `xxxxxx`
+about: Found a bug? Please describe it so it can be fixed! Replace the xxxxxx
   with your info
 title: ''
 labels: ''
@@ -21,7 +21,7 @@ xxxxxx
 This is the most important part:
 - **Which calculator model exactly:**
 **xxxxxx**
-(it must be one of the following: TI-83 Premium CE, TI-83 Premium CE Edition Python, TI-84 Plus CE, TI-84 Plus CE-T, TI-84 Plus CE Python Edition)
+(it must be one of the following: TI-83 Premium CE, TI-83 Premium CE Edition Python, TI-84 Plus CE, TI-84 Plus CE-T, TI-84 Plus CE-T Python Edition)
 
 - **Which Boot and OS versions is the calculator running:**
 **Boot: xxxxxx** ; **OS: xxxxxx**

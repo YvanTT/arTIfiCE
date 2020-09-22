@@ -7,9 +7,16 @@
     <title>arTIfiCE | Jailbreak for TI CE calculators</title>
     <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Oxygen:700" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        #changelogDiv ul li { list-style: disc; }
+        html, body { overflow-x: hidden; }
+        body { position: relative; }
+    </style>
     <script src="scrollreveal.min.js"></script>
 </head>
 <body class="is-boxed has-animations">
+
+<div style="width: 220px; position: absolute; text-align: center; line-height: 40px; color: #f0f0f0; box-shadow: 0 0 5px rgb(202 202 202); top: 40px; right: -50px; left: auto; transform: rotate(45deg); background: #39d; font-family: sans-serif; z-index: 99;"><a href="https://github.com/YvanTT/arTIfiCE/releases/download/v1.1/arTIfiCE.8xv" download target="_blank" style="color: white;">v1.1 available!</a></div>
 
 <div class="animated-scene">
     <div class="animated-scene__frame">
@@ -95,7 +102,7 @@
                                 <h3 class="mt-0 mb-16">1. Download these 2 files</h3>
                                 <div class="m-0">
                                     <ul>
-                                        <li><a href="https://github.com/YvanTT/arTIfiCE/releases/download/v1.0/arTIfiCE.8xv" download target="_blank">arTIfiCE.8xv</a> (jailbreak with shell)</li>
+                                        <li><a href="https://github.com/YvanTT/arTIfiCE/releases/download/v1.1/arTIfiCE.8xv" download target="_blank">arTIfiCE.8xv</a> (jailbreak with shell)</li>
                                         <li><a href="https://education.ti.com/software/details/en/55EDE969CFD2484487B4556641BDDC4E/cabri-jr-app" target="_blank" rel="nofollow">Cabri™ Jr. app 5.0</a> (used to launch the jailbreak. Not needed if you already have the app on your calc).</li>
                                     </ul>
                                 </div>
@@ -133,7 +140,7 @@
                                 <p class="m-0">Open the <tt>apps</tt> menu on your CE, then launch <b>CabriJr</b>, and open <b>ARTIFICE</b>.
                                 <br>You are now able to launch ASM programs!<br><br>
                                     From there, you should probably install a shell like
-                                    <a href="https://github.com/mateoconlechuga/cesium/releases/latest" target="_blank">Cesium</a>.
+                                    <a href="https://github.com/mateoconlechuga/cesium/releases/latest" target="_blank">Cesium</a>, and/or <a href="https://github.com/jacobly0/asmhook/releases/latest" target="_blank">AsmHook</a>.
                                     It makes it easier for you to launch programs later on.
                                 <br><br><small><i>Press <tt>mode</tt> in order to quit the shell.</i></small></p>
                             </div>
@@ -195,7 +202,7 @@
 
                                     <button class="accordion">Is there any faster way to launch my programs?</button>
                                     <div class="panel">
-                                        <p>Sure, from the arTIfiCE shell, you can install another shell, for instance <a href="https://github.com/mateoconlechuga/cesium/releases/latest" target="_blank">Cesium</a>, which can be opened more quickly (thus you get to launch your programs more easily).</p>
+                                        <p>Sure, from the arTIfiCE shell, you can install another shell like <a href="https://github.com/mateoconlechuga/cesium/releases/latest" target="_blank">Cesium</a> which can be opened more quickly (thus you get to launch your programs more easily), or a utility like <a href="https://github.com/jacobly0/asmhook/releases/latest" target="_blank">AsmHook</a> that enables launching directly on the homescreen like before.</p>
                                     </div>
 
                                     <button class="accordion">Fun fact?</button>
@@ -210,6 +217,47 @@
                 </div>
             </div>
         </section>
+        
+        <section class="features-extended section">
+            <div class="features-extended-inner section-inner">
+                <div class="features-extended-wrap">
+                    <div class="container-sm">
+                        <hr>
+                        <br>
+                        <div class="feature-extended" id="faq" style="justify-content: start !important; padding: 0;">
+                            <div class="feature-extended-body is-revealing" style="width: 100% !important;">
+                                <h3 class="mt-0 mb-16">Changelog:</h3>
+                                <div id="changelogDiv" style="font-size: 0.9em; text-align: left; width: 95%;">
+                                <div>
+                                    <p style="float:right; margin:0"><i>Note that all releases are <a href="https://github.com/YvanTT/arTIfiCE/releases" target="_blank">available here</a>.</i></p>
+                                </div>
+                                <div>
+                                    <h6>v1.1 – Sept. 22, 2020</h6>
+                                    <div style="margin-left: 1em;border-left: 1px grey dashed;padding-left: 1em;">
+                                        Address a few issues reported <a href="https://github.com/YvanTT/arTIfiCE/issues/1" target="_blank">here</a>. Thanks to <i>PrivateDragon</i> for reporting &amp; testing.
+                                        <ul>
+                                            <li>Handle <abbr title="Automatic Power Down™">APD</abbr>™ (fix issues after using programs for some time)</li>
+                                            <li>Improve compatibility with the Cabri™ Jr. app (it now works correctly afterwards)</li>
+                                            <li>Show help bar at the bottom and version number at the top</li>
+                                        </ul>
+                                        <p><small><i>Note: if you experienced the bug where Cabri appeared to 'freeze' when you open arTIfiCE, you will need to press <tt>y=</tt> (or <tt>f(x)</tt>) to progress. This may only happen on first launch.</i></small></p>
+                                    </div>
+                                    </div>
+                                    <div>
+                                        <h5>v1.0 – Sept. 5, 2020</h5>
+                                        <div style="margin-left: 1em;border-left: 1px grey dashed;padding-left: 1em;">
+                                            Initial release
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer class="site-footer">

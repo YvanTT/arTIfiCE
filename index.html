@@ -12,7 +12,6 @@
         html, body { overflow-x: hidden; }
         body { position: relative; }
     </style>
-    <script src="scrollreveal.min.js"></script>
 </head>
 <body class="is-boxed has-animations">
 
@@ -45,13 +44,14 @@
                 </div>
             </div>
         </section>
-<!--
+
+        <!--
         <section class="features-extended section">
             <div class="features-extended-inner section-inner" style="margin: -30px -30px -50px;">
                 <div class="features-extended-wrap">
                     <div class="container">
                         <div class="feature-extended" id="why" style="justify-content: start !important; padding: 0;">
-                            <div class="feature-extended-body is-revealing" style="width: 100% !important;">
+                            <div class="feature-extended-body" style="width: 100% !important;">
                                 <h3 class="mt-0 mb-16">Why?</h3>
                                 <div id="showWhy">
                                     Great question! <span style="cursor:pointer; text-decoration: underline; color: #3c467d" onclick="toggleWhy(); return false;"><b>Click here</b></span> to learn why <b>arTIfiCE</b> was made.
@@ -78,7 +78,7 @@
                                     <img id="fadeCalcsTop" class="device-mockup top" src="images/calcs_jb.png" alt="calculators_jailbroken" />
                                 </div>
                             </div>
-                            <div class="feature-extended-body is-revealing">
+                            <div class="feature-extended-body">
                                 <h3 class="mt-0 mb-16">Compatibility</h3>
                                 <div class="m-0">
                                     <span style="margin-bottom: 8px; display: inline-block"><b>arTIfiCE</b> works on all CE calculators:</span>
@@ -86,64 +86,168 @@
                                     <li><b>TI-83 Premium CE <i>(Edition Python)</i></b><br>OS 5.5, 5.6, 5.7, 5.8</li>
                                     <li><b>TI-84 Plus CE <i>(Python)</i></b><br>OS 5.5, 5.6, 5.7, 5.8</li>
                                     <li><b>TI-84 Plus CE-T <i>(Python Edition)</i></b><br>OS 5.5, 5.6, 5.7, 5.8</li>
+                                    <li><b>TI-82 Advanced Edition Python</b> <i style="font-size:14px">(via arTIfi82)</i><br>OS 5.6.3</li>
                                     </ul>
                                     <i>Note: <b>arTIfiCE</b> is not needed if your calculator has <b>OS 5.4</b> or earlier!</i>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="feature-extended" id="download" style="margin-bottom: -40px;">
-                            <div class="feature-extended-image">
-                                <img class="device-mockup is-revealing" src="images/artifice.gif" alt="download">
-                                <img class="device-mockup is-revealing" src="images/download.png" alt="download" style="width: 100px">
-                            </div>
-                            <div class="feature-extended-body is-revealing">
-                                <h3 class="mt-0 mb-16">1. Download these 2 files</h3>
-                                <div class="m-0">
-                                    <ul>
-                                        <li><a href="https://github.com/YvanTT/arTIfiCE/releases/download/v1.2/arTIfiCE.8xv" download target="_blank">arTIfiCE.8xv</a> (jailbreak with shell)</li>
-                                        <li><a href="https://education.ti.com/software/details/en/55EDE969CFD2484487B4556641BDDC4E/cabri-jr-app" target="_blank" rel="nofollow">Cabri™ Jr. app 5.0</a> (used to launch the jailbreak. Not needed if you already have the app on your calc).</li>
-                                    </ul>
+                        <hr style="width:200px">
+
+                        <h2 style="margin-top: 0">Tutorial</h2>
+
+                        <span>Choose your model:</span><br>
+                        <label><input type="radio" id="toggleCE" name="toggleTutorial"> TI-84 Plus CE / TI-83 Premium CE <i>(Python)</i></label>
+                        <label><input type="radio" id="toggle82" name="toggleTutorial"> TI-82 Advanced Edition Python</label>
+
+                        <section id="tutorialCE">
+                            <div class="feature-extended" style="display:none"></div>
+                            <div class="feature-extended" id="download" style="margin-bottom:-20px;">
+                                <div class="feature-extended-image">
+                                    <img class="device-mockup" src="images/artifice.gif" alt="download" style="box-shadow:none">
+                                    <img class="device-mockup" src="images/download.png" alt="download" style="width: 100px;box-shadow:none">
+                                </div>
+                                <div class="feature-extended-body">
+                                    <h3 class="mt-0 mb-16">1. Download these 2 files</h3>
+                                    <div class="m-0">
+                                        <ul>
+                                            <li><a href="https://github.com/YvanTT/arTIfiCE/releases/download/v1.2/arTIfiCE.8xv" download target="_blank">arTIfiCE.8xv</a> (jailbreak with shell)</li>
+                                            <li><a href="https://education.ti.com/software/details/en/55EDE969CFD2484487B4556641BDDC4E/cabri-jr-app" target="_blank" rel="nofollow">Cabri™ Jr. app 5.0</a> (used to launch the jailbreak. Not needed if you already have the app on your calc).</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="feature-extended" id="transfer">
-                            <div class="feature-extended-image">
-                                <video class="device-mockup is-revealing" autoplay loop muted style="width:inherit; max-width: 100%; box-shadow: 0 0 20px 8px rgba(130,129,152,.5);">
-                                    <source src="images/transfer.mp4" type="video/mp4">
-                                    <source src="images/transfer.webm" type="video/webm">
-                                </video>
-                            </div>
-                            <div class="feature-extended-body is-revealing">
-                                <h3 class="mt-0 mb-16">2. Send them to your CE</h3>
-                                <div class="m-0">You can use the usual various software to transfer both files to your calculator:
-                                    <ul>
-                                        <li><a href="https://education.ti.com/en/products/computer-software/ti-connect-ce-sw" target="_blank">TI-Connect<small>™</small> CE</a> (Windows, macOS)</li>
-                                        <li><a href="https://chrome.google.com/webstore/detail/ti-connect-ce-app-for-chr/aokihcpccmdjjkebakdanncddpdnkfla?hl=en-US" target="_blank">TI-Connect<small>™</small> CE for ChromeOS</a></li>
-                                        <li><a href="https://raw.githubusercontent.com/debrouxl/tilp_and_gfm/master/tilp/trunk/build/scripts/install_tilp.sh" target="_blank">TILP</a> (Windows, macOS, Linux)</li>
-                                    </ul>
+                            <div class="feature-extended" id="transfer">
+                                <div class="feature-extended-image">
+                                    <video class="device-mockup" autoplay loop muted style="width:inherit; max-width: 100%;">
+                                        <source src="images/transfer.mp4" type="video/mp4">
+                                        <source src="images/transfer.webm" type="video/webm">
+                                    </video>
+                                </div>
+                                <div class="feature-extended-body">
+                                    <h3 class="mt-0 mb-16">2. Send them to your CE</h3>
+                                    <div class="m-0">You can use the usual various software to transfer both files to your calculator:
+                                        <ul>
+                                            <li><a href="https://education.ti.com/en/products/computer-software/ti-connect-ce-sw" target="_blank">TI Connect<small>™</small> CE</a> (Windows, macOS)</li>
+                                            <li><a href="https://chrome.google.com/webstore/detail/ti-connect-ce-app-for-chr/aokihcpccmdjjkebakdanncddpdnkfla?hl=en-US" target="_blank">TI Connect<small>™</small> CE for ChromeOS</a></li>
+                                            <li><a href="https://raw.githubusercontent.com/debrouxl/tilp_and_gfm/master/tilp/trunk/build/scripts/install_tilp.sh" target="_blank">TILP</a> (Windows, macOS, Linux)</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="feature-extended" id="install">
-                            <div class="feature-extended-image text-center">
-                                <video class="device-mockup is-revealing" controls autoplay loop muted style="width:320px; box-shadow: 0 0 20px 8px rgba(130,129,152,.5);">
-                                    <source src="images/launch_cabri.mp4" type="video/mp4">
-                                    <source src="images/launch_cabri.webm" type="video/webm">
-                                </video>
+                            <div class="feature-extended" id="install">
+                                <div class="feature-extended-image text-center">
+                                    <video class="device-mockup" controls autoplay loop muted style="width:320px;">
+                                        <source src="images/launch_cabri.mp4" type="video/mp4">
+                                        <source src="images/launch_cabri.webm" type="video/webm">
+                                    </video>
+                                </div>
+                                <div class="feature-extended-body">
+                                    <h3 class="mt-0 mb-16">3. Open arTIfiCE in Cabri!</h3>
+                                    <p class="m-0">Open the <kbd>apps</kbd> menu on your CE, then launch <b>CabriJr</b>, and open <b>ARTIFICE</b>.
+                                        <br>You are now able to launch ASM programs!<br><br>
+                                        From there, you should probably install a shell like
+                                        <a href="https://github.com/mateoconlechuga/cesium/releases/latest" target="_blank">Cesium</a>, and/or <a href="https://github.com/jacobly0/asmhook/releases/latest" target="_blank">AsmHook</a>.
+                                        It makes it easier for you to launch programs later on.
+                                        <br><br><small><i>Press <kbd>mode</kbd> in order to quit the shell.</i></small></p>
+                                </div>
                             </div>
-                            <div class="feature-extended-body is-revealing">
-                                <h3 class="mt-0 mb-16">3. Open arTIfiCE in Cabri!</h3>
-                                <p class="m-0">Open the <tt>apps</tt> menu on your CE, then launch <b>CabriJr</b>, and open <b>ARTIFICE</b>.
-                                <br>You are now able to launch ASM programs!<br><br>
-                                    From there, you should probably install a shell like
-                                    <a href="https://github.com/mateoconlechuga/cesium/releases/latest" target="_blank">Cesium</a>, and/or <a href="https://github.com/jacobly0/asmhook/releases/latest" target="_blank">AsmHook</a>.
-                                    It makes it easier for you to launch programs later on.
-                                <br><br><small><i>Press <tt>mode</tt> in order to quit the shell.</i></small></p>
+                        </section>
+
+                        <section id="tutorial82">
+                            <div class="feature-extended" style="display:none"></div>
+                            <div class="feature-extended" id="download82">
+                                <div class="feature-extended-image">
+                                    <a href="https://github.com/YvanTT/arTIfiCE/releases/download/v1.2/arTIfi82.8xg" download target="_blank">
+                                        <img class="device-mockup" src="images/download.png" alt="download" style="width:100px;box-shadow:none">
+                                    </a>
+                                </div>
+                                <div class="feature-extended-body">
+                                    <h3 class="mt-0 mb-16">1. Télécharge arTIfi82</h3>
+                                    <div class="m-0">
+                                        ➡ fichier <a href="https://github.com/YvanTT/arTIfiCE/releases/download/v1.2/arTIfi82.8xg" download target="_blank">arTIfi82.8xg</a><br>
+                                        <span style="font-size: smaller">(c'est un groupe avec jailbreak + AsmHook)</span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+
+                            <div class="feature-extended" id="transfer82">
+                                <div class="feature-extended-image">
+                                    <video class="device-mockup" autoplay loop muted style="width:inherit; max-width: 100%;">
+                                        <source src="images/transfer82.mp4" type="video/mp4">
+                                        <source src="images/transfer82.webm" type="video/webm">
+                                    </video>
+                                </div>
+                                <div class="feature-extended-body">
+                                    <h3 class="mt-0 mb-16">2. Transfère-le sur la TI</h3>
+                                    <div class="m-0">
+                                        <p>Tu peux utiliser le programme officiel <a href="https://education.ti.com/en/products/computer-software/ti-connect-ce-sw" target="_blank">TI Connect<small>™</small> CE</a> (Windows, macOS)</p>
+                                        <p>Tu peux faire un glisser-déposer du fichier sur le nom de la calculatrice. Clique ensuite sur le bouton <span class="blue-button">Envoyer</span> qui va s'afficher.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="feature-extended" id="archivepy82">
+                                <div class="feature-extended-image">
+                                    <img src="images/archivepy.png" alt="Mise en archive des AppVars Python">
+                                </div>
+                                <div class="feature-extended-body">
+                                    <h3 class="mt-0 mb-16">3. Archive les vars Python</h3>
+                                    <div class="m-0">
+                                        <p class="mb-8">Si tu as des variables Python dans la TI (scripts, modules...), il faut les "archiver" :</p>
+                                        <ul>
+                                            <li><kbd class="key-2nde">2nde</kbd> puis <ruby><kbd>&nbsp;+&nbsp;</kbd><rp>(</rp><rt><span style="color:#C00">mém &nbsp;</span></rt><rp>)</rp></ruby></li>
+                                            <li><kbd class="key-white">&nbsp;2&nbsp;</kbd> (Gest. Mémoire)</li>
+                                            <li>En bas, choisis <b>Var&nbsp;App…</b></li>
+                                            <li>
+                                                Appuye sur <kbd>entrer</kbd> sur les <b style="color:lightblue">PY</b> sans <samp><b>*</b></samp><br>
+                                                <span style="font-size:smaller;position: relative; bottom: 4px;">(RAM = sans <samp><b>*</b></samp> ; Archive = avec <samp><b>*</b></samp>)</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="feature-extended" id="ungroup82">
+                                <div class="feature-extended-image">
+                                    <img src="images/ungroup82.png" alt="Dégroupage arTIfi82">
+                                </div>
+                                <div class="feature-extended-body">
+                                    <h3 class="mt-0 mb-16">4. Dégroupe <samp>arTIfi82</samp></h3>
+                                    <div class="m-0">
+                                        <p class="mb-8">Là, tu vas rentrer dans la matrice 😎</p>
+                                        <ul>
+                                            <li><kbd class="key-2nde">2nde</kbd> puis <ruby><kbd>&nbsp;+&nbsp;</kbd><rp>(</rp><rt><span style="color:#C00">mém &nbsp;</span></rt><rp>)</rp></ruby></li>
+                                            <li><kbd class="key-white">&nbsp;8&nbsp;</kbd> (Grouper…)</li>
+                                            <li><kbd>&nbsp;►&nbsp;</kbd> (va à droite sur "Dégrouper")</li>
+                                            <li>Appuye sur <kbd>entrer</kbd> sur <samp><b>arTIfi82</b></samp></li>
+                                        </ul>
+                                        <p style="font-size: smaller">Ça va prendre un peu moins de 30s</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="feature-extended" id="install82">
+                                <div class="feature-extended-image text-center">
+                                    <img src="images/apps82.png" alt="écran des APPS">
+                                </div>
+                                <div class="feature-extended-body">
+                                    <h3 class="mt-0 mb-16">5. Lance l'app Python82 !</h3>
+                                    <p>
+                                        Appuye sur <kbd class="key-2nde">2nde</kbd> puis <ruby><kbd>résol</kbd><rp>(</rp><rt><span style="color:#C00">apps &nbsp;</span></rt><rp>)</rp></ruby>, puis choisis l'application <b>Python82</b>.
+                                        <br><span style="font-size: smaller">(Une barre de chargement peut s'afficher)</span>
+                                    </p>
+                                    <p>✅ Au bout de quelques secondes, l'app devrait se quitter toute seule, et c'est fini !</p>
+                                    <p style="font-size: 14px">(Tu peux maintenant désarchiver les variables de l'étape 3)</p>
+                                </div>
+                            </div>
+                            <p><b>Tu peux désormais lancer des programmes ASM depuis le menu <kbd>prgm</kbd> habituel <i>(section TI-Basic)</i>.</b></p>
+                            <p><i>En cas de besoin (après un reset par exemple), pour récupérer l'ASM, et sans ordinateur, il suffit de recommencer à partir de l'étape 3 - donc garde bien AsmHook + le groupe arTIfi82 dans la mémoire !</i></p>
+                        </section>
+
                     </div>
                 </div>
             </div>
@@ -152,56 +256,79 @@
         <section class="features-extended section">
             <div class="features-extended-inner section-inner" style="margin: -30px -30px -50px;">
                 <div class="features-extended-wrap">
-                    <div class="container-sm">
+                    <div class="container">
                         <hr>
                         <br>
                         <div class="feature-extended" id="faq" style="justify-content: start !important; padding: 0;">
-                            <div class="feature-extended-body is-revealing" style="width: 100% !important;">
-                                <h3 class="mt-0 mb-16">FAQ:</h3>
+                            <div class="feature-extended-body" style="width: 100% !important;">
+                                <h2 class="mt-0 mb-16">FAQ:</h2>
+                                <i>Note that these apply to both arTIfiCE and arTIfi82, unless otherwise specified.</i><br>
                                 <div id="faqDiv">
-                                    <button class="accordion">Why?</button>
+                                    <button class="accordion">A "jailbreak" for a calculator, really?</button>
                                     <div class="panel">
-                                        <p>Great question! A more detailed answer will make its way onto this page later on, but in summary: it gives back to users their legitimate right to enjoy a feature they paid for that TI unilaterally removed in the latest OS versions (allegedly for security reasons, but the bug that cheaters could in theory use was from TI and had nothing to do with ASM!)</p>
+                                        <p>Well, as crazy as this may sound, sure! But in truth, this isn't <i>really</i> a "jailbreak", it doesn't even modify anything, it's just a program launcher.</p>
                                     </div>
 
-                                    <button class="accordion">How do I uninstall arTIfiCE?</button>
+                                    <button class="accordion">... But why?</button>
                                     <div class="panel">
-                                        <p>Delete the arTIfiCE appvar from the Memory menu (<tt>2nd</tt>+<tt>+</tt>). Depending on what you need to do, you may also want to delete any installed shell and trigger a RAM Reset as well (be sure to archive and/or backup your files first)</p>
+                                        <p>In short, it gives back to users their legitimate right to enjoy a feature they paid for that TI unilaterally removed in the latest OS versions (allegedly for security reasons, but the bug that cheaters could in theory use was from TI and had nothing to do with ASM!).</p>
+                                        <p>This unfair no-ASM restriction unfortunately also found its way into the French-only TI-82 Advanced Edition Python, as it comes with OS 5.6.3, but now with arTIfi82, this limitation is lifted :)</p>
+                                        <p>Hopefully more students can become more interested in programming now!</p>
                                     </div>
 
-                                    <button class="accordion">Will arTIfiCE void the warranty?</button>
+                                    <button class="accordion">There is an error / it crashed. What do I do?</button>
                                     <div class="panel">
-                                        <p>Most probably not, considering arTIfiCE only executes a small piece of assembly code (which was previously possible in earlier OSes), and doesn't install anything persistent. Simply fully reset your calc and there will be no trace of it.</p>
+                                        <p>While unlikely, if this happens, you can always reset your calculator (backup your files on your computer first) and try again! A RAM reset (from the mem menu, towards the bottom) is generally enough.</p>
                                     </div>
 
-                                    <button class="accordion">How does arTIfiCE work?</button>
+                                    <button class="accordion">How do I uninstall it?</button>
                                     <div class="panel">
-                                        <p>arTIfiCE uses software bugs in the calculator's code to be able to execute assembly. A light "shell" is run allowing you to choose which program to launch. The source code may become available later on GitHub.</p>
+                                        <p>Simply delete the arTIfiCE/arTIfi82 variables from the Memory menu (<kbd>2nd</kbd>+<kbd>+</kbd>).</p>
+                                        <p>If Cesium and/or AsmHook are installed, you may also want to delete them and trigger a RAM Reset (be sure to archive and/or backup your files first)</p>
                                     </div>
 
-                                    <button class="accordion">Will the bugs allowing arTIfiCE to exist ever be fixed?</button>
+                                    <button class="accordion">Will this void the warranty?</button>
                                     <div class="panel">
-                                        <p>Most likely, but many other bugs have been found that future versions of arTIfiCE may use :)</p>
+                                        <p>Most probably not, considering arTIfiCE/arTIfi82 only executes a small piece of assembly code (which was previously possible in earlier OSes), and doesn't install anything persistent. Simply fully reset your calc and there will be no trace of it.</p>
                                     </div>
 
-                                    <button class="accordion">Can I cheat with arTIfiCE?</button>
+                                    <button class="accordion">How does it work?</button>
                                     <div class="panel">
-                                        <p>No - arTIfiCE only restores functionality TI calculators had for dozens of years and removed in the latest OS. arTIfiCE is in no way a cheating tool, and cheating is not condoned here in any way.</p>
+                                        <p><b>arTIfiCE</b> uses software bugs in the calculator's code to be able to execute assembly. A light "shell" is run allowing you to choose which program to launch. The source code may become available later on GitHub.</p>
+                                        <p>Regarding <b>arTIfi82</b>, it also exploits a bug to be able to execute assembly. But in this case, there is no "shell", it just runs <a href="https://github.com/jacobly0/asmhook" target="_blank">AsmHook</a>, allowing you to later launch ASM programs directly.</p>
                                     </div>
 
-                                    <button class="accordion">Is arTIfiCE still present in Press-To-Test mode?</button>
+                                    <button class="accordion">Will the bugs ever be fixed by TI?</button>
                                     <div class="panel">
-                                        <p>No - arTIfiCE resides in an "appvar" file (Application Variable, an 8xv file) and it will be deleted by the OS when going into Press-To-Test mode, just like most other appvars. You'll have to re-transfer+open it after your exam.</p>
+                                        <p>Probably, if people start using it as a way to install undesirable programs (please don't cheat). So far, this hasn't happened, so it seems like TI is leaving us alone.</p>
+                                        <p>But just in case, many other bugs have been found that future versions of arTIfiCE could use :)</p>
                                     </div>
 
-                                    <button class="accordion">Can I downgrade my OS with arTIfiCE?</button>
+                                    <button class="accordion">Can I cheat with it?</button>
                                     <div class="panel">
-                                        <p>No, or at least not directly: arTIfiCE only makes it possible for you to launch ASM programs, that's it. So you'd have to find a downgrade program for that (search for it on the usual websites).</p>
+                                        <p><b>No</b>. arTIfiCE only restores functionality TI calculators had for dozens of years and removed in recent OS versions.</p>
+                                        <p>It is also not present in Press-To-Test (PTT) / exam mode, see below.</p>
+                                        <p style="color: white">arTIfiCE and arTIfi82 are in no way a cheating tool. Cheating is not condoned here in any way.</p>
+                                    </div>
+
+                                    <button class="accordion">Does this hack/bypass Press-To-Test (PTT) / exam mode?</button>
+                                    <div class="panel">
+                                        <p><b>No</b>. arTIfiCE resides in an "appvar" file (Application Variable, an 8xv file) and it will be deleted by the OS when going into PTT mode, just like most other variables. You'll have to re-transfer+open it after your exam.</p>
+                                        <p>It is similar for arTIfi82: PTT is unaffected, as required files will not be available in Python82.</p>
+                                        <p>(Reminder that simply transferring anything to the calculator leaves PTT / exam mode)</p>
+                                        <p style="color: white">arTIfiCE and arTIfi82 are in no way a cheating tool. Cheating is not condoned here in any way.</p>
+                                    </div>
+
+                                    <button class="accordion">Can I downgrade my OS with it?</button>
+                                    <div class="panel">
+                                        <p>No, considering arTIfiCE only makes it possible for you to launch ASM programs, nothing else.</p>
+                                        <p>(This makes downgrading not needed, especially if you use tools like <a href="https://github.com/mateoconlechuga/cesium/releases/latest" target="_blank">Cesium</a> or <a href="https://github.com/jacobly0/asmhook/releases/latest" target="_blank">AsmHook</a> etc.)</p>
                                     </div>
 
                                     <button class="accordion">Is there any faster way to launch my programs?</button>
                                     <div class="panel">
-                                        <p>Sure, from the arTIfiCE shell, you can install another shell like <a href="https://github.com/mateoconlechuga/cesium/releases/latest" target="_blank">Cesium</a> which can be opened more quickly (thus you get to launch your programs more easily), or a utility like <a href="https://github.com/jacobly0/asmhook/releases/latest" target="_blank">AsmHook</a> that enables launching directly on the homescreen like before.</p>
+                                        <p>For <b>arTIfiCE</b>: Sure, from the arTIfiCE shell, you can install another shell like <a href="https://github.com/mateoconlechuga/cesium/releases/latest" target="_blank">Cesium</a> which can be opened more quickly (thus you get to launch your programs more easily), or a utility like <a href="https://github.com/jacobly0/asmhook/releases/latest" target="_blank">AsmHook</a> that enables launching directly on the homescreen like before.</p>
+                                        <p>For <b>arTIfi82</b>: this doesn't apply, as AsmHook is already pre-installed (so you can launch programs directly from the prgm menu), and apps (like Cesium) cannot be installed.</p>
                                     </div>
 
                                     <button class="accordion">Fun fact?</button>
@@ -220,18 +347,26 @@
         <section class="features-extended section">
             <div class="features-extended-inner section-inner">
                 <div class="features-extended-wrap">
-                    <div class="container-sm">
+                    <div class="container">
                         <hr>
                         <br>
-                        <div class="feature-extended" id="faq" style="justify-content: start !important; padding: 0;">
-                            <div class="feature-extended-body is-revealing" style="width: 100% !important;">
-                                <h3 class="mt-0 mb-16">Changelog:</h3>
+                        <div class="feature-extended" id="changelog" style="justify-content: start !important; padding: 0;">
+                            <div class="feature-extended-body" style="width: 100% !important;">
+                                <h2 class="mt-0 mb-16">Changelog:</h2>
                                 <div id="changelogDiv" style="font-size: 0.9em; text-align: left; width: 95%;">
                                     <div>
-                                        <p style="float:right; margin:0"><i>Note that all releases are <a href="https://github.com/YvanTT/arTIfiCE/releases" target="_blank">available here</a>.</i></p>
+                                        <p style="float:right; margin: -15px 0 4px 0;"><i>Note that all releases are <a href="https://github.com/YvanTT/arTIfiCE/releases" target="_blank">available here</a>.</i></p>
                                     </div>
                                     
                                     <div>
+                                        <h6>(v1.2 for CE, still) + v1.0 for 82AEP – Sept. 23, 2024</h6>
+                                        <div style="margin-left: 1em;border-left: 1px grey dashed;padding-left: 1em;">
+                                            No change for arTIfiCE, but <b>release of arTIfi82 v1.0</b><br>
+                                            <b>arTIfi82</b> is specifically made for the <i>TI-82 Advanced Edition Python</i>, a cheaper model sold only for France, based on the TI-83 Premium CE, but with AAA batteries and fewer features.<br/>
+                                            <i>This was kindly contributed by an anonymous user, thank you!</i><br>
+                                            By the way, arTIfiCE is celebrating 155k downloads! 🎉
+                                        </div>
+
                                         <h6>v1.2 – June 10, 2022</h6>
                                         <div style="margin-left: 1em;border-left: 1px grey dashed;padding-left: 1em;">
                                             Minor release
@@ -249,7 +384,7 @@
                                                 <li>Improve compatibility with the Cabri™ Jr. app (it now works correctly afterwards)</li>
                                                 <li>Show help bar at the bottom and version number at the top</li>
                                             </ul>
-                                            <p><small><i>Note: if you experienced the bug where Cabri appeared to 'freeze' when you open arTIfiCE, you will need to press <tt>y=</tt> (or <tt>f(x)</tt>) to progress. This may only happen on first launch.</i></small></p>
+                                            <p><small><i>Note: if you experienced the bug where Cabri appeared to 'freeze' when you open arTIfiCE, you will need to press <kbd>y=</kbd> (or <kbd>f(x)</kbd>) to progress. This may only happen on first launch.</i></small></p>
                                         </div>
                                         
                                         <div>
@@ -285,9 +420,11 @@
                             <small class="text-center">If you want to help, thank you! But don't donate to me, rather donate to the <a href="https://github.com/CE-Programming/toolchain" target="_blank">CE-Programming contributors</a> on GitHub, they make all native development on the CE possible and awesome!</small>
                             <br><br>
                             <small class="text-center">
-                                Legal notes: this website is not affiliated with TI (duh) and everything was done independently.<br>
-                                Use <b>arTIfiCE</b> at your own risk (but don't worry, no tested calcs ran into any issues)<br>
-                                <em style="display: inline-block; margin-top: 8px">Background made with images from <a href="https://tiplanet.org/forum/viewtopic.php?f=41&t=23858" target="_blank">this article</a>. Credits to their respective authors.</em>
+                                <u>Legal notes:</u><br>
+                                This website is not affiliated with TI (duh) and everything was done independently.<br>
+                                Use <b>arTIfiCE</b>/<b>arTIfi82</b> at your own risk (but don't worry, no tested calcs ran into any issues).<br>
+                                <em style="display: inline-block; margin-top: 16px">The <b>AsmHook</b> program present inside arTIfi82 was simply bundled in unmodified (<a href="https://github.com/jacobly0/asmhook" target="_blank">GitHub repo</a>).</em>
+                                <em>Background made with images from <a href="https://tiplanet.org/forum/viewtopic.php?f=41&t=23858" target="_blank">this article</a>. Credits to their respective authors.</em>
                             </small>
                         </div>
                     </div>

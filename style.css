@@ -15,6 +15,15 @@ body {
     display: none;
 }
 
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-delay: 0s !important;
+        animation-duration: 0s !important;
+        transition-delay: 0s !important;
+        transition-duration: 0s !important;
+    }
+}
+
 @media (min-width: 1024px) {
     @keyframes infiniteScrollBg {
         0% {
@@ -86,7 +95,7 @@ body {
     margin-bottom: 30px;
 }
 
-tt {
+kbd {
     border: 1px grey solid;
     border-radius: 6px;
     padding-top: 0 !important;
@@ -96,6 +105,27 @@ tt {
     font-family: sans-serif !important;
     font-weight: bold;
     color: #464242;
+}
+#tutorial82 kbd {
+    background-color: black;
+    box-shadow: 0 1px 0 #111;
+    color: white;
+    border-radius: 5px 5px 10px 10px;
+    padding: 4px 8px;
+}
+#tutorial82 kbd.key-2nde {
+    background-color: darkred;
+    box-shadow: 0 1px 0 #d00000;
+}
+#tutorial82 kbd.key-white {
+    background-color: white;
+    box-shadow: 0 1px 0 #eee;
+    color: black;
+}
+#tutorial82 kbd ~ ruby span {
+    font-size: 11px;
+    position: relative;
+    bottom: 1px;
 }
 
 article, aside, footer, header, nav, section {
@@ -424,49 +454,49 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 h1, .h1 {
     font-size: 38px;
     line-height: 48px;
-    letter-spacing: 0px
+    letter-spacing: 0
 }
 
 @media (min-width: 641px) {
     h1, .h1 {
         font-size: 44px;
         line-height: 54px;
-        letter-spacing: 0px
+        letter-spacing: 0
     }
 }
 
 h2, .h2 {
     font-size: 32px;
     line-height: 42px;
-    letter-spacing: 0px
+    letter-spacing: 0
 }
 
 @media (min-width: 641px) {
     h2, .h2 {
         font-size: 38px;
         line-height: 48px;
-        letter-spacing: 0px
+        letter-spacing: 0
     }
 }
 
 h3, .h3, blockquote {
     font-size: 28px;
     line-height: 34px;
-    letter-spacing: 0px
+    letter-spacing: 0
 }
 
 @media (min-width: 641px) {
     h3, .h3, blockquote {
         font-size: 32px;
         line-height: 42px;
-        letter-spacing: 0px
+        letter-spacing: 0
     }
 }
 
 h4, .h4 {
     font-size: 28px;
     line-height: 34px;
-    letter-spacing: 0px
+    letter-spacing: 0
 }
 
 h5, .h5, h6, .h6 {
@@ -479,25 +509,25 @@ h5, .h5, h6, .h6 {
     .h1-mobile {
         font-size: 38px;
         line-height: 48px;
-        letter-spacing: 0px
+        letter-spacing: 0
     }
 
     .h2-mobile {
         font-size: 32px;
         line-height: 42px;
-        letter-spacing: 0px
+        letter-spacing: 0
     }
 
     .h3-mobile {
         font-size: 28px;
         line-height: 34px;
-        letter-spacing: 0px
+        letter-spacing: 0
     }
 
     .h4-mobile {
         font-size: 28px;
         line-height: 34px;
-        letter-spacing: 0px
+        letter-spacing: 0
     }
 
     .h5-mobile, .h6-mobile {
@@ -675,7 +705,7 @@ button, input, select, textarea, label {
     clip: auto !important;
     display: block;
     font-size: 14px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     font-weight: 600;
     line-height: 16px;
     text-decoration: none;
@@ -1106,19 +1136,14 @@ button, input, select, textarea, label {
     padding-left: 64px
 }
 
-.sr .has-animations .is-revealing {
-    visibility: hidden
-}
-
 .button {
     display: inline-flex;
     font-size: 14px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     font-weight: 700;
     line-height: 16px;
     text-decoration: none !important;
     text-transform: uppercase;
-    background-color: #fff;
     background: #fff;
     color: #4234F8 !important;
     border: none;
@@ -1293,8 +1318,6 @@ button, input, select, textarea, label {
     bottom: 42%;
     left: 0;
     right: 0;
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(11,13,25,1) 0%, rgb(0 0 0) 100%);
     z-index: -2
 }
 
@@ -1552,6 +1575,7 @@ button, input, select, textarea, label {
 }
 
 .feature-extended-image {
+    align-content: center;
     position: relative;
     margin-bottom: 32px
 }
@@ -1605,7 +1629,7 @@ button, input, select, textarea, label {
         flex-wrap: nowrap;
         align-items: stretch;
         justify-content: flex-end;
-        padding: 64px 0
+        padding: 35px 0
     }
 
     .feature-extended .feature-extended-image {
@@ -1684,6 +1708,12 @@ button, input, select, textarea, label {
     min-height: 100vh
 }
 
+@media (prefers-reduced-transparency: no-preference) {
+    .body-wrap {
+        background: linear-gradient(90deg, rgba(10, 14, 26, 0) 0%, rgba(10, 14, 26, 1) 2%, rgba(10, 14, 26, 1) 98%, rgba(10, 14, 26, 0) 100%);
+    }
+}
+
 .boxed-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -1708,7 +1738,6 @@ main {
 
 .site-footer {
     position: relative;
-    background: #0B0D19
 }
 
 .site-footer .footer-particles-container {
@@ -1722,7 +1751,7 @@ main {
 .site-footer-bottom {
     font-size: 14px;
     line-height: 22px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     z-index: 1
 }
 
@@ -1854,4 +1883,32 @@ button.accordion {
     font-size: 0.9em;
     line-height: 1.3em;
     margin: 5px 0 10px 12px;
+}
+
+#tutorialCE, #tutorial82 {
+    display: none;
+}
+
+#tutorialCE video, #tutorial82 video,
+#tutorialCE div.feature-extended-image img, #tutorial82 div.feature-extended-image img {
+    box-shadow: 0 0 20px 8px rgba(130,129,152,.5);
+}
+
+label:has(input[name='toggleTutorial']) {
+    display: block;
+}
+label:has(input:checked) {
+    font-weight: bold;
+    color: #dfdfdf;
+}
+label:has(#toggleCE:checked) ~ #tutorialCE,
+label:has(#toggle82:checked) ~ #tutorial82 {
+    display: block;
+}
+
+#tutorial82 span.blue-button {
+    background-color: blue;
+    padding: 2px 6px;
+    color: white;
+    border-radius: 6px;
 }

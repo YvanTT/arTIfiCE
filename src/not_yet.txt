@@ -1,2 +1,2 @@
-The source code of the arTIfiCE jailbreak will be available after the flaw is fixed.
+The source code of the arTIfiCE v2 exploit ("GotoAsm") will be available after the flaw is fixed.
 This is done this way to ensure that it doesn't get too easy for TI to fix this.

@@ -15,7 +15,7 @@
 </head>
 <body class="is-boxed has-animations">
 
-<div style="width: 220px; position: absolute; text-align: center; line-height: 40px; color: #f0f0f0; box-shadow: 0 0 5px rgb(202 202 202); top: 40px; right: -50px; left: auto; transform: rotate(45deg); background: #39d; font-family: sans-serif; z-index: 99;"><a href="https://github.com/YvanTT/arTIfiCE/releases/download/v2.1/arTIfiCE_v2.1.8xp" download target="_blank" style="color: white;">v2.1 available!</a></div>
+<div style="width: 220px; position: absolute; text-align: center; line-height: 40px; color: #f0f0f0; box-shadow: 0 0 5px rgb(202 202 202); top: 40px; right: -50px; left: auto; transform: rotate(45deg); background: #39d; font-family: sans-serif; z-index: 99;"><a href="https://github.com/YvanTT/arTIfiCE/releases/latest" target="_blank" style="color: white;">arTIfiCE v3</a></div>
 
 <div class="animated-scene">
     <div class="animated-scene__frame">
@@ -82,7 +82,8 @@
                                 <h3 class="mt-0 mb-16">Compatibility</h3>
                                 <div class="m-0">
                                     <div style="margin-bottom: 8px; display: inline-block">
-                                        <b>arTIfiCE v2.1</b> works on all CE calculators, from OS 5.3 to 5.8.4.<br>
+                                        <b>arTIfiCE v3</b> supports CE OS <b>v5.8.5</b> only.<br>
+                                        <b>arTIfiCE v2</b> supports CE OS until <b>v5.8.4</b>.<br>
                                         <i>Note: it is not needed on <b>OS 5.4</b> or earlier!</i>
                                     </div>
                                     <ul>
@@ -92,7 +93,7 @@
                                     </ul>
 
                                     <div style="margin-bottom: 8px; display: inline-block">
-                                        The <b>TI-82 Advanced Edition Python</b> is also compatible (from OS 5.6.3 to 5.6.6).
+                                        The <b>TI-82 Advanced Edition Python</b> is supported from OS v5.6.3 to v5.6.6, via arTIfiCE v2.1.
                                     </div>
                                 </div>
                             </div>
@@ -102,26 +103,44 @@
 
                         <h2 style="margin-top: 0">Install Tutorial</h2>
 
-                        <span>Choose your language:</span> &nbsp;
-                        <label style="display: inline-block"><input type="radio" id="toggleCE" name="toggleTutorial" checked> 🇺🇸 English</label> &nbsp;&nbsp;
-                        <label style="display: inline-block"><input type="radio" id="toggle82" name="toggleTutorial"> 🇫🇷 Français</label>
+                        <span>Choose your model:</span><br>
+                        <label><input type="radio" id="toggleCE" name="toggleTutorial" checked> TI-83 Premium CE / TI-84 Plus CE family</label>
+                        <label><input type="radio" id="toggle82" name="toggleTutorial"> TI-82 Advanced Edition Python</label>
 
                         <section id="tutorialCE">
+                            <hr style="margin-bottom: 0">
+                            <div class="feature-extended" id="downloadV2" style="margin-bottom:-20px;">
+                                <div>
+                                    <h3 class="mt-0 mb-16">⚠️ if you have the CE OS v5.8.4 or earlier...</h3>
+                                    <div class="m-0">
+                                        Just download and transfer <a href="https://github.com/YvanTT/arTIfiCE/releases/download/v2.1/arTIfiCE_v2.1.8xp" download target="_blank">arTIfiCE_v2.1.8xp</a>,
+                                        then open the <kbd>prgm</kbd> menu on your calculator, choose <span style="white-space: nowrap">TI-Basic</span> if you are asked, choose the 1<sup>st</sup> program (A), and press <kbd>enter</kbd>.<br>
+                                        <br>You are now able to launch ASM programs!
+                                        <br><br><small><i>Press <kbd>mode</kbd> in order to quit the arTIfiCE shell.</i></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+
                             <div class="feature-extended" style="display:none"></div>
+                            <br>
+                            Now, if you have OS 5.8.5...
+
                             <div class="feature-extended" id="download" style="margin-bottom:-20px;">
                                 <div class="feature-extended-image">
-                                    <a href="https://github.com/YvanTT/arTIfiCE/releases/download/v2.1/arTIfiCE_v2.1.8xp" download target="_blank">
-                                        <img class="device-mockup" src="images/artifice.gif" alt="download" style="box-shadow:none">
+                                    <a href="https://github.com/YvanTT/arTIfiCE/releases/download/v3/arTIfiCE_v3_CE.zip" target="_blank">
+                                        <img class="device-mockup" src="images/artifice.gif" alt="arTIfiCE v3" style="box-shadow:none">
                                         <img class="device-mockup" src="images/download.png" alt="download" style="width: 100px;box-shadow:none">
                                     </a>
                                 </div>
                                 <div class="feature-extended-body">
-                                    <h3 class="mt-0 mb-16">1. Download arTIfiCE v2.1</h3>
-                                    <div class="m-0">
-                                        <ul>
-                                            <li><a href="https://github.com/YvanTT/arTIfiCE/releases/download/v2.1/arTIfiCE_v2.1.8xp" download target="_blank">arTIfiCE_v2.1.8xp</a> (jailbreak with shell)</li>
-                                        </ul>
-                                    </div>
+                                    <h3 class="mt-0 mb-16">1. Download arTIfiCE v3</h3>
+                                    <p class="m-0">Get the <a href="https://github.com/YvanTT/arTIfiCE/releases/download/v3/arTIfiCE_v3_CE.zip" target="_blank">latest release</a> and extract the zip:</p>
+                                    <ul>
+                                        <li>the installer program (<samp>arTIfiCE.8xp</samp>);</li>
+                                        <li>the trigger AppVar (<samp>INEQUVAR.8xv</samp>).</li>
+                                    </ul>
+                                    <p>(Make sure the <b>Inequalz</b> app is installed on the calculator. <a href="https://education.ti.com/en/software/details/en/8C7FB96338F9469BB9D970AFC034EC39/inequality-graphing-app" target="_blank" referrerpolicy="no-referrer">Get it here</a> if needed, then install it normally.)</p>
                                 </div>
                             </div>
 
@@ -133,86 +152,61 @@
                                     </video>
                                 </div>
                                 <div class="feature-extended-body">
-                                    <h3 class="mt-0 mb-16">2. Send it to the calculator</h3>
-                                    <div class="m-0">You can use the usual various software to transfer the file to your calculator:
-                                        <ul>
-                                            <li><a href="https://education.ti.com/en/products/computer-software/ti-connect-ce-sw" target="_blank">TI Connect<small>™</small> CE</a> (Windows, macOS)</li>
-                                            <li><a href="https://chrome.google.com/webstore/detail/ti-connect-ce-app-for-chr/aokihcpccmdjjkebakdanncddpdnkfla?hl=en-US" target="_blank">TI Connect<small>™</small> CE for ChromeOS</a></li>
-                                            <li><a href="https://raw.githubusercontent.com/debrouxl/tilp_and_gfm/master/tilp/trunk/build/scripts/install_tilp.sh" target="_blank">TILP</a> (Windows, macOS, Linux)</li>
-                                        </ul>
-                                        <p>With TI Connect<small>™</small> CE, you can simply drag'n'drop the file onto the calculator's name.</p>
-                                    </div>
+                                    <h3 class="mt-0 mb-16">2. Reset &amp; first transfer</h3>
+                                    <ol>
+                                        <li>Archive or back up anything important</li>
+                                        <li>Perform a RAM reset: either from the mem menu (<kbd>2nd</kbd><kbd>+</kbd><kbd>7</kbd><kbd>1</kbd>), or by pressing the <b>RESET</b> button on the back for 3-4 s</li>
+                                        <li>Send the <samp>arTIfiCE.8xp</samp> file to <b>RAM</b>.<br>
+                                        (do not send <samp>INEQUVAR.8xv</samp> yet)</li>
+                                    </ol>
+                                    <p>You can transfer files with <a href="https://education.ti.com/en/products/computer-software/ti-connect-ce-sw" target="_blank">TI Connect<small>™</small> CE</a> or <a href="https://web.tilp.info" target="_blank">WebTILP / TILP</a>.</p>
                                 </div>
                             </div>
 
-                            <div class="feature-extended" id="install">
-                                <div class="feature-extended-image text-center">
-                                    <video class="device-mockup" controls autoplay loop muted style="width:320px;">
-                                        <source src="images/launch.mp4" type="video/mp4">
-                                        <source src="images/launch.webm" type="video/webm">
-                                    </video>
+                            <div class="feature-extended" id="open-inequalz">
+                                <div class="feature-extended-image">
+                                    <img src="images/steps_1.gif" alt="Functions">
                                 </div>
-                                <div class="feature-extended-body">
-                                    <h3 class="mt-0 mb-16">3. Run <span style="font-family: monospace">prgmA</span></h3>
-                                    <p class="m-0">Open the <kbd>prgm</kbd> menu on your calculator, choose <span style="white-space: nowrap">TI-Basic</span> if you are asked, choose the 1<sup>st</sup> program (A), and press <kbd>enter</kbd>.<br>
-                                        <br>You are now able to launch ASM programs!
-                                        <br><br><small><i>Press <kbd>mode</kbd> in order to quit arTIfiCE.</i></small></p>
+                                <div class="feature-extended-body" style="width:60%">
+                                    <h3 class="mt-0 mb-16">3. Open Inequalz</h3>
+                                    <ul>
+                                        <li><b>TI-84 Plus CE:</b> press <kbd>apps</kbd>, then choose <b>Inequalz</b>.</li>
+                                        <li><b>TI-83 Premium CE:</b> press <kbd>2nde</kbd>, then <kbd>résol</kbd> (apps), and choose <b>Inequalz</b>.</li>
+                                    </ul>
+                                    <p>Now, <b>dismiss</b> the Inequalz splash screen (press any key), then <b>stay</b> on the Functions (Y=) screen.</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-extended" id="trigger-ce">
+                                <div class="feature-extended-image">
+                                    <img src="images/steps_2.gif" alt="Apps">
+                                </div>
+                                <div class="feature-extended-body" style="width:60%">
+                                    <h3 class="mt-0 mb-16">4. Send the AppVar file</h3>
+                                    <p>Now transfer the <b><samp>INEQUVAR.8xv</samp></b> file from the computer.</p>
+                                    <p>The calculator installs <b>AsmHook2</b> into the APPS list, then reboots automatically.</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-extended" id="enable-asmhook2">
+                                <div class="feature-extended-image">
+                                    <img src="images/steps_3.gif" alt="Success">
+                                </div>
+                                <div class="feature-extended-body" style="width:60%">
+                                    <h3 class="mt-0 mb-16">5. Enable AsmHook2</h3>
+                                    <p>Open the Apps menu again then launch <b>AsmHook2</b> once. That's it! You can now launch assembly programs normally from the Program menu.</p>
+                                    <p>The AsmHook2 app stays installed through reboots and RAM resets. After any RAM reset, simply launch the app once again, no computer is needed.</p>
+                                    <p><small>If Inequalz later reports <b>CONFLICTING APPS</b>, choose option 2. Inequalz will work normally; launch AsmHook2 again after leaving it.</small></p>
                                 </div>
                             </div>
                         </section>
 
                         <section id="tutorial82">
-                            <div class="feature-extended" style="display:none"></div>
-                            <div class="feature-extended" id="download82" style="margin-bottom:-20px;">
-                                <div class="feature-extended-image">
-                                    <a href="https://github.com/YvanTT/arTIfiCE/releases/download/v2.1/arTIfiCE_v2.1.8xp" download target="_blank">
-                                        <img class="device-mockup" src="images/artifice.gif" alt="download" style="box-shadow:none">
-                                        <img class="device-mockup" src="images/download.png" alt="download" style="width: 100px;box-shadow:none">
-                                    </a>
-                                </div>
-                                <div class="feature-extended-body">
-                                    <h3 class="mt-0 mb-16">1. Télécharge arTIfiCE v2</h3>
-                                    <div class="m-0">
-                                        <ul>
-                                            <li><a href="https://github.com/YvanTT/arTIfiCE/releases/download/v2.1/arTIfiCE_v2.1.8xp" download target="_blank">arTIfiCE_v2.1.8xp</a> (jailbreak avec shell)</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="feature-extended" id="transfer82">
-                                <div class="feature-extended-image">
-                                    <video class="device-mockup" autoplay loop muted style="width:inherit; max-width: 100%;">
-                                        <source src="images/transfer.mp4" type="video/mp4">
-                                        <source src="images/transfer.webm" type="video/webm">
-                                    </video>
-                                </div>
-                                <div class="feature-extended-body">
-                                    <h3 class="mt-0 mb-16">2. Transfère-le sur la TI</h3>
-                                    <div class="m-0">Tu peux utiliser les programmes habituels pour transférer le fichier :
-                                        <ul>
-                                            <li><a href="https://education.ti.com/fr/produits/logiciel-ordinateur/ti-connect-ce-sw" target="_blank">TI Connect<small>™</small> CE</a> (Windows, macOS)</li>
-                                            <li><a href="https://raw.githubusercontent.com/debrouxl/tilp_and_gfm/master/tilp/trunk/build/scripts/install_tilp.sh" target="_blank">TILP</a> (Windows, macOS, Linux)</li>
-                                        </ul>
-                                        <p>Avec TI Connect<small>™</small> CE, tu peux faire un glisser-déposer du fichier sur le nom de la calculatrice.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="feature-extended" id="install82">
-                                <div class="feature-extended-image text-center">
-                                    <video class="device-mockup" controls autoplay loop muted style="width:320px;">
-                                        <source src="images/launch.mp4" type="video/mp4">
-                                        <source src="images/launch.webm" type="video/webm">
-                                    </video>
-                                </div>
-                                <div class="feature-extended-body">
-                                    <h3 class="mt-0 mb-16">3. Lance <span style="font-family: monospace">prgmA</span></h3>
-                                    <p class="m-0">Ouvre le menu <kbd>prgm</kbd> de ta TI, choisis <span style="white-space: nowrap">TI-Basic</span>, puis le 1<sup>er</sup> programme (A), et appuie sur <kbd>entrer</kbd>.<br>
-                                        <br>Tu peux désormais lancer des programmes ASM !
-                                        <br><br><small><i>Appuie sur <kbd>mode</kbd> pour quitter arTIfiCE.</i></small></p>
-                                </div>
-                            </div>
+                            <br>
+                            <p>
+                                Désolé, la TI-82 Advanced Edition Python n'est pas gérée pour le moment avec l'OS 5.6.7.<br>
+                                Si tu as un OS plus ancien, télécharge et transfère <a href="https://github.com/YvanTT/arTIfiCE/releases/tag/v2.1"><b>arTIfiCE v2.1</b></a> qui y fonctionnera. <br>
+                                Ensuite, lance <span style="font-family: monospace">prgmA</span>.
                         </section>
 
                     </div>
@@ -232,7 +226,7 @@
                                 <div id="faqDiv">
                                     <button class="accordion">A "jailbreak" for a calculator, really?</button>
                                     <div class="panel">
-                                        <p>Well, as crazy as this may sound, sure! But in truth, this isn't <i>really</i> a "jailbreak", it doesn't even modify anything, it's just a program launcher.</p>
+                                        <p>Well, as crazy as this may sound, sure! In practice, arTIfiCE only restores the ability to run assembly programs. On CE models, v3 installs the removable AsmHook2 Flash app.</p>
                                     </div>
 
                                     <button class="accordion">... But why?</button>
@@ -261,13 +255,13 @@
 
                                     <button class="accordion">Will this void the warranty?</button>
                                     <div class="panel">
-                                        <p>Most probably not, considering arTIfiCE/arTIfi82 only executes a small piece of assembly code (which was previously possible in earlier OSes), and doesn't install anything persistent. Simply fully reset your calc and there will be no trace of it.</p>
+                                        <p>Most probably not, but no warranty promise can be made here. arTIfiCE restores assembly execution, which earlier OS versions supported. The CE installation is removable using the uninstall steps above.</p>
                                     </div>
 
                                     <button class="accordion">How does it work?</button>
                                     <div class="panel">
-                                        <p><b>arTIfiCE</b> uses software bugs in the calculator's code to be able to execute assembly. A light "shell" is run allowing you to choose which program to launch. Exploit source codes are available over time <a href="https://github.com/YvanTT/arTIfiCE/tree/master/src">on the GitHub repo</a>.</p>
-                                        <p>Regarding <b>arTIfi82</b>, it also exploits a bug to be able to execute assembly. But in this case, there is no "shell", it just runs <a href="https://github.com/jacobly0/asmhook" target="_blank">AsmHook</a>, allowing you to later launch ASM programs directly.</p>
+                                        <p><b>arTIfiCE v3</b> uses a software bug to run a one-shot installer. On supported CE models, that installer creates the <a href="https://github.com/RoccoLoxPrograms/AsmHook2" target="_blank">AsmHook2</a> Flash app and immediately resets the calculator to clean up the temporary exploit state. Launching AsmHook2 then enables normal assembly-program launching.</p>
+                                        <p>The v3 exploit was kindly donated by an anonymous contributor.</p>
                                     </div>
 
                                     <button class="accordion">Will the bugs ever be fixed by TI?</button>
@@ -275,7 +269,7 @@
                                         <p>Probably, eventually.<br>
                                             But don't worry too much, many other bugs have been found that future versions of arTIfiCE could use :)</p>
                                         <p>In May 2025, TI fixed the security flaws with the 5.8.3 (CE) / 5.6.5 (82AEP) updates.</p>
-                                        <p>Since August 27th 2025, arTIfiCE v2 is available for CE+82AEP and uses another, generic, exploit.</p>
+                                        <p>arTIfiCE v3 uses a different exploit and supports the latest CE OS 5.8.5.</p>
                                     </div>
 
                                     <button class="accordion">Can I cheat with it?</button>
@@ -301,15 +295,14 @@
 
                                     <button class="accordion">Is there any faster way to launch my programs?</button>
                                     <div class="panel">
-                                        <p>For <b>arTIfiCE v2</b>: It's hard to make it faster than that already, the shell being in the first position of the program list :-) However, you could use <a href="https://github.com/RoccoLoxPrograms/AsmHook2/releases/latest" target="_blank">AsmHook2</a> to re-enable running programs just from the homescreen. There are also some external shells that may also provide AsmHook-like functionality (for instance, <a href="https://github.com/RoccoLoxPrograms/CEaShell#ceashell--" target="_blank">CEaShell</a>).</p>
-                                        <p>For <b>arTIfiCE v1</b>: Sure, from the arTIfiCE shell, you can install another shell like <a href="https://github.com/mateoconlechuga/cesium/releases/latest" target="_blank">Cesium</a> which can be opened more quickly (thus you get to launch your programs more easily), or a utility like <a href="https://github.com/jacobly0/asmhook/releases/latest" target="_blank">AsmHook</a> that enables launching directly on the homescreen like before.</p>
-                                        <p>For <b>arTIfi82</b>: this doesn't apply, as AsmHook is already pre-installed (so you can launch programs directly from the prgm menu), and apps (like Cesium) cannot be installed.</p>
+                                        <p>On CE models, v3 already installs AsmHook2: after enabling it once, launch assembly programs directly from the normal Program menu. Launch AsmHook2 again after a RAM reset.</p>
+                                        <p>The 82AEP has no persistent equivalent because it cannot install third-party Flash apps</p>
                                     </div>
 
                                     <button class="accordion">Fun fact?</button>
                                     <div class="panel">
                                         <p>Alright... The underlying exploit has a codename. In fact, all the underlying exploits found so far have fun codenames.<br>
-                                        arTIfiCE v1 uses "CabriJmp", arTIfiCE v2 uses "GotoAsm".</p>
+                                        arTIfiCE v1 uses "CabriJmp", v2 uses "GotoAsm", v3 uses "Unequalz"/"armisTICE".</p>
                                     </div>
                                 </div>
                             </div>
@@ -333,16 +326,18 @@
                                     <div>
                                         <p style="float:right; margin: -15px 0 4px 0;"><i>Note that all releases are <a href="https://github.com/YvanTT/arTIfiCE/releases" target="_blank">available here</a>.</i></p>
                                     </div>
-                                    
+
                                     <div>
-                                        <h6>v2.1 for CE + 82AEP – Oct. 9, 2025</h6>
+                                        <h6>v3.0 for CE – Sep. 21, 2026</h6>
                                         <div style="margin-left: 1em;border-left: 1px grey dashed;padding-left: 1em;">
-                                            <b>Minor release</b><br>
+                                            <b>Support for CE OS v5.8.5!</b><br>
                                             <ul>
-                                                <li>Fix crash at launch if the current calculation modes were not the default ones</li>
+                                                <li>New exploit kindly donated by an anonymous contributor</li>
+                                                <li>Works on CE OS v5.8.5 (only). For earlier versions, use arTIfiCE v2.1</li>
+                                                <li>Persistent AsmHook2 installation with automatic RAM-reset cleanup on CE models</li>
                                             </ul>
                                         </div>
-                                        
+
                                         <h6>v2.0 for CE + 82AEP – Aug. 27, 2025</h6>
                                         <div style="margin-left: 1em;border-left: 1px grey dashed;padding-left: 1em;">
                                             <b>Major release!</b><br>
